@@ -138,7 +138,15 @@ This writes/overwrites `docs/index.html`.
   show a `[warn]`/`[error]` line pointing at what broke rather than failing silently.
 - The scraper identifies itself with a browser-like `User-Agent` and adds a short
   delay between requests to be polite to the site.
-- Only one Barnstormers category is currently configured
-  (`category-22245-Taildragger--Bellanca.html`). If listings turn out to
-  be split across additional categories, add more URLs to
-  `CATEGORY_URLS` in `scraper/barnstormers.py`.
+- Two Barnstormers categories are currently configured:
+  `category-22245-Taildragger--Bellanca.html` (by manufacturer) and
+  `category-22289-Taildragger--Citabria.html` (by model name -
+  Barnstormers splits some listings across both rather than filing
+  everything under the manufacturer). Note that the Citabria category
+  isn't Bellanca-exclusive - it can include current-production
+  American-Champion-built Citabrias too, and since "Citabria" is trusted
+  as a model match on its own (see above), those get published here
+  labeled "Bellanca Citabria" the same as a genuine vintage Bellanca-built
+  one, since the ad title alone doesn't reliably distinguish the actual
+  manufacturer/build era. If more categories turn out to carry Bellanca
+  listings, add more URLs to `CATEGORY_URLS` in `scraper/barnstormers.py`.

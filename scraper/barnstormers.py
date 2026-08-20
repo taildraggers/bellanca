@@ -59,9 +59,13 @@ SITE_NAME = "Barnstormers.com"
 BASE = "https://www.barnstormers.com"
 MAKE = "Bellanca"
 
-# Category page for Bellanca taildragger listings on Barnstormers.
+# Category pages for Bellanca taildragger listings on Barnstormers. There
+# are two: one under the "Bellanca" brand name and a separate one under
+# the "Citabria" model name (Barnstormers splits some listings across
+# both rather than filing everything under the manufacturer).
 CATEGORY_URLS = [
     f"{BASE}/category-22245-Taildragger--Bellanca.html",
+    f"{BASE}/category-22289-Taildragger--Citabria.html",
 ]
 
 MAX_PAGES = 10
